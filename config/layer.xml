@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * -c category     Requerido	Nombre de la carpeta en el arbol
+                                El nombre se toma de un array de categorias, 
+                                seteado en Categories.php
+                                Sino lo encuentra es el especificado aca                                
+ * -t title        Requerido	Nombre de la capa a mostrar en el arbol
+ * -n name         Requerido	Nombre de la capa en el servicio WMS
+ * -u url          Requerido	Nombre asociado a la direccion del WMS. 
+                                Se obtiene de un array con urls seteado en Urls.php
+                                Sino está en el array la capa no se cargará
+ * -v visibility   Opcional	Estado de visibilidad inicial (1 visible, 0 no)     Defecto: 0
+ * -d tiled        Opcional	Utilizar o no protocolo WMSC (1, 0)                 Defecto: 0
+ * -b isBaseLayer  Opcional	Si es o no capa base (1, 0)                         Defecto: 0
+ * -s styles       Opcional     Nombre del estilo de la capa                        Defecto: ""
+ * -o opacity      Opcional     Valor de opacidad para la capa e/ 1 y 0             Defecto: 1
+ 
+ Cualquier opción requerida que no esté seteada la capa no se cargará
+-->
+<layers>
+    <layer c="gasoducto" t="Gasoducto Troncal" n="gaservipba" u="Geodesia" />
+    <layer c="gasoducto" t="Camuzzi" n="camuzzi_pba" u="Geodesia" />
+    <layer c="gasoducto" t="Transportadora Gas del Norte" n="tgn_pba" u="Geodesia" />
+    <layer c="dpa" t="Salud" n="salud_dpa_2016" u="Geodesia" />
+    <layer c="habitat" t="Villas y Asentamientos" n="publico:villas_y_asentamientos_confirmados_rppvap" u="Habitat" />
+    <layer c="fim" t="Obras" n="obr2016_ptos" u="Geodesia" />
+    <layer c="bagsa" t="Red Operativa" n="red_operativa" u="Geodesia" />
+    <!--<layer c="grandesobras" t="Arquitectura" n="grandes_obras_dpa" u="Geodesia" />
+    <layer c="grandesobras" t="Vialidad" n="obras_vialidad2016" u="Geodesia" />
+    <layer c="grandesobras" t="DIPAC" n="grandes_obras_dipac" u="Geodesia" />-->
+    <layer c="Vialidad" t="Red Vial Nacional" n="Geodesia:rutas_nac" u="Geobasig" />
+    <layer c="Vialidad" t="Red Vial Provincial" n="red-vial" u="Geodesia" />
+    <layer c="Vialidad" t="Red Vial Secundaria" n="Geodesia:secundaria" u="Geobasig" />
+    <layer c="Ada" t="Industrias" n="industrias_ada" u="Geodesia" />
+    <layer c="Ada" t="Cuencas" n="cuencas" u="Geodesia" />
+    <layer c="Geodesia" t="Cob.Hidrica_Noroeste-2009" n="cub_hid_2009NO" u="Geodesia" />
+    <layer c="Geodesia" t="Cob.Hidrica_Noroeste-2002" n="cub_hid_2002" u="Geodesia" />
+    <layer c="Geodesia" t="Cob.Hidrica_Noroeste-2001" n="cub_hid_2001NO" u="Geodesia" />
+    <layer c="Geodesia" t="Cob.Hidrica_Noroeste-1998" n="cub_hid_1998NO" u="Geodesia" />
+    <layer c="Geodesia" t="ParcelarioTransparente" n="Parcelario_Transparente" u="Geobasig" />
+    <layer c="Geodesia" t="Parcelario" n="ParcelarioCompleto" u="Geodesia" />
+    <layer c="Geodesia" t="Red Geoba" n="geoba" u="Geobasig" />
+    <layer c="Censo2010" t="Población por Localidad" n="poblacion_x_loc" u="Geodesia" />
+    <layer c="Censo2010" t="Población por Radio" n="pobl_x_radio" u="Geodesia" o="0.7777777" />
+    <layer c="Censo2010" t="Población por Fracción" n="pobl_x_fraccion" u="Geodesia" o="0.7777777" />
+    <layer c="Spar" t="Obras_2016" n="obras2016_geo" u="Geodesia" />
+    <layer c="Dipac" t="Obras 2016" n="Obras_2016(dipac)" u="Geodesia" />
+    <layer c="Dipac" t="Obr.de Arte-Cloaca" n="puntos_c_20140729" u="Geodesia" />
+    <layer c="Dipac" t="Obr.de Arte-Agua" n="obras_a_puntos" u="Geodesia" />
+    <layer c="Dipac" t="Traza de Cloaca" n="obras_c_traza" u="Geodesia" />
+    <layer c="Dipac" t="Traza de Agua" n="obras_a_traza" u="Geodesia" />
+    <layer c="Dipac" t="Cobertura de Cloaca" n="obras_c" u="Geodesia" />
+    <layer c="Dipac" t="Cobertura de Agua" n="obras_a" u="Geodesia" />
+    <layer c="Dipac" t="Acueductos" n="acueductos_absa_f" u="Geodesia" />
+    <layer c="Red_a" t="Operador de Agua" n="prestadores" u="Geodesia" s="operador_agua" />
+    <layer c="Red_a" t="Pozos de agua" n="pozosconget" u="Geodesia" />
+    <layer c="Red_a" t="Cobertura de Agua" n="cobertura_agua" u="Geodesia" />
+    <layer c="Red_a" t="Plantas" n="plantas_a" u="Geodesia" />
+    <layer c="Red_a" t="Red Fina" n="gred_de_agua" u="Geodesia" />
+    <layer c="Red_a" t="Tanques y Cisternas" n="tyc_conlocalidades" u="Geodesia" />
+    <layer c="Red_c" t="Camaras" n="camaras" u="Geodesia" /> 
+    <layer c="Red_c" t="Operador de Cloaca" n="prestadores" u="Geodesia" s="operador_cloaca" />
+    <layer c="Red_c" t="Cobertura de Cloaca" n="cobertura_cloaca" u="Geodesia" />    
+    <layer c="Red_c" t="Plantas" n="plantas_c" u="Geodesia" />
+    <layer c="Red_c" t="Red Fina" n="gred_de_cloaca" u="Geodesia" />
+    <layer c="Secciones" t="Sección VIII" n="viii_seccion" u="Geodesia" />
+    <layer c="Secciones" t="Sección VII" n="vii_seccion" u="Geodesia" />
+    <layer c="Secciones" t="Sección VI" n="vi_seccion" u="Geodesia" />
+    <layer c="Secciones" t="Sección V" n="v_seccion" u="Geodesia" />
+    <layer c="Secciones" t="Sección IV" n="iv_seccion" u="Geodesia" />
+    <layer c="Secciones" t="Sección III" n="iii_seccion" u="Geodesia" />
+    <layer c="Secciones" t="Sección II" n="ii_seccion" u="Geodesia" />
+    <layer c="Secciones" t="Sección I" n="i_seccion" u="Geodesia" />
+    <layer c="IGN" t="Cuerpos de Agua" n="cuerpos_de_agua" u="Geodesia" />
+    <layer c="IGN" t="Cursos de Agua" n="cursos_de_agua" u="Geodesia" />
+    <layer c="IGN" t="Curvas de Nivel" n="curvas_de_nivel" u="Geodesia" />
+    <layer c="Geodesia" t="Provincia" n="Provincia" u="Geodesia" v="1" s="Provincia2" />
+    <layer c="energia" t="Estaciones transformadoras de alta tension" n="electrica_transporte_visor_eett" u="Energia" />
+    <layer c="energia" t="Estructuras de lineas de alta tension" n="electrica_transporte_visor_estructuras" u="Energia" />
+    <layer c="energia" t="Lineas electricas de alta y media tension" n="cfee_buenosaires_red_at_mt" u="Energia" />
+    <layer c="energia" t="Lineas electricas de alta tension" n="electrica_transporte_visor_lineas" u="Energia" />
+    <layer c="energia" t="Centrales de generación de energía eléctrica" n="electrica_generacion_visor_centrales" u="Energia" />
+    <layer c="energia" t="Concesiones de distribuidoras eléctricas" n="electrica_distribucion_concesiones_distribuidoras" u="Energia" />
+    <layer c="energia" t="Areas de distribución de cooperativas eléctricas" n="electrica_distribucion_visor_concesiones_cooperativas" u="Energia" />
+    <layer c="energia" t="Líneas de alta tensión aéreas del Gran Buenos Aires Norte - EDENOR" n="edenor_visor_redelec_at_lineasaereas" u="Energia" />
+    <layer c="energia" t="Líneas de alta tensión subterráneas del Gran Buenos Aires Norte - EDENOR" n="edenor_visor_redelec_at_cablessubt" u="Energia" />
+    <layer c="energia" t="Líneas MT subterráneas del Gran Buenos Aires Norte - EDENOR" n="edenor_visor_redelec_mt_cablessubt" u="Energia" />
+    <layer c="energia" t="Subestaciones transformadoras AT del Gran Buenos Aires Norte - EDENOR" n="edenor_visor_redelec_at_subestaciones" u="Energia" />
+    <layer c="energia" t="Subestaciones transformadoras AT/MT del Gran Buenos Aires Norte - EDENOR" n="edenor_visor_redelec_at_subestacionesatmt_atat" u="Energia" />
+    <layer c="energia" t="Líneas MT aéreas del Gran Buenos Aires Norte - EDENOR" n="edenor_visor_redelec_mt_lineasaereas" u="Energia" />
+    <layer c="energia" t="Líneas de alta tensión del Gran Buenos Aires Sur - EDESUR" n="edesur_red_at" u="Energia" />
+    <layer c="energia" t="Líneas MT del Gran Buenos Sur - EDESUR" n="edesur_red_mt" u="Energia" />
+    <layer c="energia" t="Líneas de alta tensión de La Plata - EDELAP" n="edelap_tramos_at" u="Energia" />
+    <layer c="energia" t="Cabeceras AT de La Plata - EDELAP" n="edelap_cabeceras_at" u="Energia" />
+    <layer c="energia" t="Cabeceras MT de La Plata - EDELAP" n="edelap_cabeceras_mt" u="Energia" />
+    <layer c="energia" t="Líneas MT de La Plata - EDELAP" n="edelap_tramos_mt" u="Energia" />
+    <layer c="energia" t="Subestaciones transformadoras AT/AT de La Plata - EDELAP" n="edelap_subestaciones_transf_at_at" u="Energia" />
+    <layer c="energia" t="Subestaciones transformadoras AT/MT de La Plata - EDELAP" n="edelap_subestaciones_transf_at_mt" u="Energia" />
+    <layer c="energia" t="Centros de transformación MT/MT de La Plata - EDELAP" n="edelap_centros_transf_mt_mt" u="Energia" />
+    <layer c="energia" t="Centros de transformación MT/BT de La Plata - EDELAP" n="edelap_centros_transf_mt_bt" u="Energia" />
+    <layer c="energia" t="Líneas de alta y media tensión del Interior de Buenos Aires - CFEE" n="cfee_buenosaires_red_at_mt" u="Energia" />
+    <!--
+    <layer c="Pluri_arq" t="2017" n="pluri_comisarias2017" u="Geodesia" />
+    <layer c="Pluri_arq" t="2018" n="pluri_comisarias2018" u="Geodesia" />
+    <layer c="Pluri_arq" t="2019" n="pluri_comisarias2019" u="Geodesia" />    
+    <layer c="Pluri_a" t="2017" n="pluri2017_a" u="Geodesia" />
+    <layer c="Pluri_a" t="2018" n="pluri2018_a" u="Geodesia" />
+    <layer c="Pluri_a" t="2019" n="pluri2019_a" u="Geodesia" />
+    <layer c="Pluri_a" t="2020-2023" n="pluri_20_23_a" u="Geodesia" />
+    <layer c="Pluri_a" t="2024-2026" n="pluri_24_26_a" u="Geodesia" />
+    <layer c="Pluri_c" t="2017" n="pluri2017_c" u="Geodesia" />
+    <layer c="Pluri_c" t="2018" n="pluri2018_c" u="Geodesia" />
+    <layer c="Pluri_c" t="2019" n="pluri2019_c" u="Geodesia" />
+    <layer c="Pluri_c" t="2020-2023" n="pluri_20_23_c" u="Geodesia" />
+    <layer c="Pluri_c" t="2024-2026" n="pluri24_26_c" u="Geodesia" />
+    <layer c="Salud" t="U.P.A." n="upa" u="Geodesia" />
+    <layer c="Salud" t="Centros Municipales" n="municipales" u="Geodesia" />
+    <layer c="Salud" t="Centros Provinciales" n="hosp_prov" u="Geodesia" />
+    <layer c="arba" t="Cotas" n="Cotas" u="ARBA" />
+    -->
+</layers>
