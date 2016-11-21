@@ -1,8 +1,17 @@
 a {
     color: green;
     text-align: center;
-    font-size: 2em;
-    color: #9ACA3C;
+    font-size: 28px;
+    color: #808080;
     text-decoration:none;
-    margin: 1em 3em; 
+    line-height: 190%;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3); 
+}
+
+a:hover {
+    color: rgb(92, 180, 21);
+}
+
+a.manual {
+    font-size: 15px;
 }

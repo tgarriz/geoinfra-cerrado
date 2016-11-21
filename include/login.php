@@ -34,7 +34,8 @@ include_once '../include/security_variables.php';
                         <input type="submit" value="Ingresar">
                     </form>
                 </div>
-		<a href="http://geolibre.geobasig.com.ar">Ingreso Libre</a>
+		<p><a href="http://geolibre.geobasig.com.ar">Acceso Libre</a></p>
+		<a class="manual" href="http://geolibre.geobasig.com.ar/pdf/GEOINFRA-MANUAL-BASE.pdf" target="_blank">Manual de Usuario</a>
                     <p>
 			<iframe width="90%" height="240" src="https://www.youtube.com/embed/N0YFCzR6zOA?rel=0" frameborder="0" allowfullscreen></iframe>
                     </p>
