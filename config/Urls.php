@@ -11,7 +11,8 @@ Class Urls {
             //"ARBA" => "http://cartoservices.arba.gov.ar/geoserver/cartoservice/wms?",
             //"UrBASig" => "http://sig.gobierno.gba.gov.ar/geoserver/urbasig/wms?",
             //"Pergamino" => "http://ide.pergamino.gob.ar:8080/geoserver/wms?",
-            "Energia" => "http://sig.se.gob.ar/cgi-bin/mapserv6?map=/var/www/html/visor/geofiles/map/mapase.map"
+            "Energia" => "http://sig.se.gob.ar/cgi-bin/mapserv6?map=/var/www/html/visor/geofiles/map/mapase.map",
+	    "ADA1" => "http://gis.ada.gba.gov.ar/cgi-bin/hx3Fo33vw2.fcgi?"
         );
         return $urls[$url];
     }

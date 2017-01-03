@@ -5,7 +5,7 @@ Class Categories {
     static function get($categ) {
         $categories = array(
             "Geodesia" => "GEODESIA E IMG.SATELITALES",
-            //"grandesobras" => "GRANDES OBRAS",
+            "grandesobras" => "GRANDES OBRAS",
             "fim" => "OBRAS F.I.M.",
 	    "bagsa" => "BAGSA",
             "Ada" => "ADA",
@@ -20,7 +20,8 @@ Class Categories {
             "habitat" => "SUBS. TIERRAS URB. Y VIVIENDA",
             "dpa" => "DPA",
             "energia" => "ENERGIA",
-            "gasoducto" => "GASODUCTOS"
+            "gasoducto" => "GASODUCTOS",
+	    "comunicacion" => "COMUNICACION"
             //"Oceba" => "OCEBA",            
             //"Salud" => "SALUD".
             //"Pluri_c" => "PLURIANUAL CLOACA",

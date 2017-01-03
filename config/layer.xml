@@ -25,25 +25,35 @@
     <layer c="habitat" t="Villas y Asentamientos" n="publico:villas_y_asentamientos_confirmados_rppvap" u="Habitat" />
     <layer c="fim" t="Obras" n="obr2016_ptos" u="Geodesia" />
     <layer c="bagsa" t="Red Operativa" n="red_operativa" u="Geodesia" />
-    <!--<layer c="grandesobras" t="Arquitectura" n="grandes_obras_dpa" u="Geodesia" />
+    <layer c="grandesobras" t="Arquitectura" n="grandes_obras_dpa" u="Geodesia" />
     <layer c="grandesobras" t="Vialidad" n="obras_vialidad2016" u="Geodesia" />
-    <layer c="grandesobras" t="DIPAC" n="grandes_obras_dipac" u="Geodesia" />-->
+    <layer c="grandesobras" t="Hidraulica" n="hidraulica" u="Geodesia" />
+    <layer c="grandesobras" t="DIPAC" n="grandes_obras_dipac" u="Geodesia" />
     <layer c="Vialidad" t="Red Vial Nacional" n="Geodesia:rutas_nac" u="Geobasig" />
     <layer c="Vialidad" t="Red Vial Provincial" n="red-vial" u="Geodesia" />
     <layer c="Vialidad" t="Red Vial Secundaria" n="Geodesia:secundaria" u="Geobasig" />
-    <layer c="Ada" t="Industrias" n="industrias_ada" u="Geodesia" />
+    <layer c="Ada" t="Industrias" n="industrias14" u="ADA1" />
+    <layer c="Ada" t="Planchetas" n="planchetero" u="ADA1" />
     <layer c="Ada" t="Cuencas" n="cuencas" u="Geodesia" />
+    <layer c="Ada" t="Cuencas SSRH" n="cuencas_ssrh" u="ADA1" />
+    <layer c="Ada" t="Regiones Hidricas" n="reg_hidricas" u="ADA1" />
+    <layer c="Ada" t="Cuencas Conurbano" n="cuencas_conu" u="ADA1" />
     <layer c="Geodesia" t="Cob.Hidrica_Noroeste-2009" n="cub_hid_2009NO" u="Geodesia" />
     <layer c="Geodesia" t="Cob.Hidrica_Noroeste-2002" n="cub_hid_2002" u="Geodesia" />
     <layer c="Geodesia" t="Cob.Hidrica_Noroeste-2001" n="cub_hid_2001NO" u="Geodesia" />
     <layer c="Geodesia" t="Cob.Hidrica_Noroeste-1998" n="cub_hid_1998NO" u="Geodesia" />
-    <layer c="Geodesia" t="ParcelarioTransparente" n="Parcelario_Transparente" u="Geobasig" />
+    <layer c="Geodesia" t="ParcelarioTransparente" n="Parcelario_Transparente" u="Geodesia" />
     <layer c="Geodesia" t="Parcelario" n="ParcelarioCompleto" u="Geodesia" />
     <layer c="Geodesia" t="Red Geoba" n="geoba" u="Geobasig" />
     <layer c="Censo2010" t="Población por Localidad" n="poblacion_x_loc" u="Geodesia" />
-    <layer c="Censo2010" t="Población por Radio" n="pobl_x_radio" u="Geodesia" o="0.7777777" />
-    <layer c="Censo2010" t="Población por Fracción" n="pobl_x_fraccion" u="Geodesia" o="0.7777777" />
+    <layer c="Censo2010" t="Población por Radio" n="pobl_x_radio" u="Geodesia" o="0.7" />
+    <layer c="Censo2010" t="Población por Fracción" n="pobl_x_fraccion" u="Geodesia" o="0.7" />
     <layer c="Spar" t="Obras_2016" n="obras2016_geo" u="Geodesia" />
+    <layer c="comunicacion" t="Click_cluster" n="Geodesia:clicks_clustermaps" u="Geobasig" />
+    <layer c="comunicacion" t="Click_heatmap" n="Geodesia:clicks_heatmap" u="Geobasig" />
+    <layer c="comunicacion" t="ivr_cluster" n="Geodesia:ivr_clustermap" u="Geobasig" />
+    <layer c="comunicacion" t="ivr_heatmap" n="Geodesia:ivr_heatmap" u="Geobasig" />
+    <layer c="comunicacion" t="Resumen" n="Geodesia:resumen_ivr" u="Geobasig" />
     <layer c="Dipac" t="Obras 2016" n="Obras_2016(dipac)" u="Geodesia" />
     <layer c="Dipac" t="Obr.de Arte-Cloaca" n="puntos_c_20140729" u="Geodesia" />
     <layer c="Dipac" t="Obr.de Arte-Agua" n="obras_a_puntos" u="Geodesia" />
@@ -54,13 +64,13 @@
     <layer c="Dipac" t="Acueductos" n="acueductos_absa_f" u="Geodesia" />
     <layer c="Red_a" t="Operador de Agua" n="prestadores" u="Geodesia" s="operador_agua" />
     <layer c="Red_a" t="Pozos de agua" n="pozosconget" u="Geodesia" />
-    <layer c="Red_a" t="Cobertura de Agua" n="cobertura_agua" u="Geodesia" />
+    <layer c="Red_a" t="Cobertura de Agua" n="gcobertura_agua" u="Geodesia" />
     <layer c="Red_a" t="Plantas" n="plantas_a" u="Geodesia" />
     <layer c="Red_a" t="Red Fina" n="gred_de_agua" u="Geodesia" />
     <layer c="Red_a" t="Tanques y Cisternas" n="tyc_conlocalidades" u="Geodesia" />
     <layer c="Red_c" t="Camaras" n="camaras" u="Geodesia" /> 
     <layer c="Red_c" t="Operador de Cloaca" n="prestadores" u="Geodesia" s="operador_cloaca" />
-    <layer c="Red_c" t="Cobertura de Cloaca" n="cobertura_cloaca" u="Geodesia" />    
+    <layer c="Red_c" t="Cobertura de Cloaca" n="gcobertura_cloaca" u="Geodesia" />    
     <layer c="Red_c" t="Plantas" n="plantas_c" u="Geodesia" />
     <layer c="Red_c" t="Red Fina" n="gred_de_cloaca" u="Geodesia" />
     <layer c="Secciones" t="Sección VIII" n="viii_seccion" u="Geodesia" />
